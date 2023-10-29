@@ -8,7 +8,7 @@ import static java.awt.image.BufferedImage.TYPE_INT_RGB;
 
 public class CharacterArt {
 
-    private final double SCALE_FACTOR = 0.30;
+    private final double SCALE_FACTOR = .5;
     private int width, height;
     private String path;
     private BufferedImage original;
@@ -99,7 +99,7 @@ public class CharacterArt {
 
 
     public static void main(String[] args) {
-        CharacterArt art = new CharacterArt("");
+        CharacterArt art = new CharacterArt("src\\Images\\test.png");
         art.produce();
     }
 }
